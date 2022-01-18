@@ -26,8 +26,8 @@ function deleteCookie(cname) {
     return "";
   }
   
-  function checkCookie() {
-    let user = getCookie("username");
+  function checkCookie(cname) {
+    let user = getCookie(cname);
     if (user != "") {
       alert("Welcome again " + user);
     } else {

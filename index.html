@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>NASA Challenge</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/f20b2414b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://kit.fontawesome.com/f20b2414b5.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="navbar" id="nav">
-        <div class="navbar-container" id="nav-container">
-            <a class="navbar-brand" href="#">Spacestagram</a>
-            <input type="text" name="searchBar" id="searchBar" placeholder="Search" />
-            <nav class="nav-links">
-                <ul>
-                    <li>
-                        <button><i class="far fa-heart"></i></button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="navbar-container" id="nav-container">
+        <a class="navbar-brand" href="#">Spacestagram</a>
+        <!-- <input type="text" name="searchBar" id="searchBar" placeholder="Search" /> -->
+        <nav class="nav-links">
+          <ul>
+            <div class="search-bar">
+              <input
+                id="searchBar"
+                type="text"
+                class="search-bar__input"
+                placeholder="Search..."
+                aria-label="search"
+              />
+              <button class="search-bar__submit">
+                <i
+                  class="fas fa-search"
+                  aria-label="submit search"
+                ></i>
+              </button>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div class="container" id="searchWrapper">
-        <div id="searchResults"></div>
+      <div id="searchResults"></div>
     </div>
     <script src="cookies.js"></script>
     <script src="search.js"></script>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>

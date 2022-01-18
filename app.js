@@ -11,7 +11,6 @@ window.onload = () => {
     setWidth();
     setPadding(882);
   } else {
-    console.log(width);
     setWidth();
     setBlockSize();
   }
@@ -46,19 +45,12 @@ function setWidth() {
   container.style.width = width+"px";
 }
 
-function setBlockSize() {
-  console.log(((window.innerWidth/3)+2)+"px")
-  let imgs = document.getElementsByClassName("block");
-  for(let i = 0; i<imgs.length; i++){
-    imgs[i].style.width = ((window.innerWidth/3)+2)+"px";
-    imgs[i].style.height = ((window.innerWidth/3)+2)+"px";
-  }
-}
 
 /* If you type something, wipes and searches */
 const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keyup', (e) => {
   clearSearch();
+  clearImage();
   const searchString = e.target.value.toLowerCase();
   displaySearch(searchString);
 });
