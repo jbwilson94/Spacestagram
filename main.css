@@ -36,7 +36,7 @@ body {
 .search-bar {
   border: solid 2px darkgray;
   display: flex;
-  border-radius: 50px;
+  width: 100px;
 }
 
 .search-bar__input {
@@ -44,6 +44,7 @@ body {
   font-size: 1rem;
   padding: 0 0.5em;
   border: 0;
+  width: 100%;
 }
 
 .search-bar__input:focus {
@@ -115,4 +116,8 @@ body {
 .fa-heart {
   padding-bottom: 20px;
   font-size: 30px;
+}
+
+.imageShowcase {
+  padding: 20px;
 }
